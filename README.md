@@ -20,7 +20,7 @@
 
 ## Markdown - Syntax Highlights
 
-Using **TAB** (\\t) charater within Code Block:
+Using *TAB* (\\t) charater within Code Block:
 
 ```sql
 -- RDBMS..: SQLite, version 3
@@ -45,7 +45,7 @@ CREATE UNIQUE	INDEX If NOT EXISTS [Blacklist_I01U] ON [Blacklist](RecGUID);
 CREATE			INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activated, Content);
 ```
 
-Using Spaces instead of TAB charater within Code Block:
+Using *Spaces* instead of TAB charater within Code Block:
 
 ```sql
 -- RDBMS..: SQLite, version 3
@@ -70,6 +70,14 @@ CREATE UNIQUE INDEX If NOT EXISTS [Blacklist_I01U] ON [Blacklist](RecGUID);
 CREATE        INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activated, Content);
 ```
 
+## Markdown - CSS Style
+
+Using <span class='primary' style='font-weight:bold;'>SPAN</span> tag with <span class='danger'>CSS Style</span>.
+
 ---
 
-
+<style>
+	img { border: solid 1px #4949FC; }
+	.danger { color: #dc3545; }
+	.primary { color: #007bff; }
+</style>
