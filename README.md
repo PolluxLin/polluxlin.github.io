@@ -108,11 +108,11 @@ Using <span class='primary' style='font-weight:bold;'>SPAN</span> tag with <span
 ```
 得改用 <a target='_blank' href='https://en.wikibooks.org/wiki/LaTeX/Colors#Adding_the_color_package'>LaTeX/Colors</a> 語法, 如:
 ```
-github Markdown do $\colorbox{white}{{\color{red}{NOT}}}$ support CSS Style !
+github Markdown do $\color{red}{NOT}$ support CSS Style !
 ```
 效果如下:
 
-github Markdown do $\colorbox{white}{{\color{red}{NOT}}}$ support CSS Style !
+github Markdown $\color{red}{DO\ NOT}$ support CSS Style !
 
 相關的討論:
 - <a target='_blank' href='https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file'>How to add color to GitHub's README.md file</a>
