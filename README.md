@@ -118,6 +118,11 @@ github Markdown $\color{red}{DO\ NOT}$ support CSS Style !
 - <a target='_blank' href='https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file'>How to add color to GitHub's README.md file</a>
 - <a target='_blank' href='https://stackoverflow.com/questions/51956361/custom-css-file-for-readme-md-in-a-github-repo'>Custom css file for readme.md in a Github repo</a>
 
+In-line Style 也是不支援的
+```
+How about <span style='font-weight:900;'>In-Line Style</span> ?
+```
+
 How about <span style='font-weight:900;'>In-Line Style</span> ?
 
 ---
