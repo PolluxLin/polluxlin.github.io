@@ -111,7 +111,8 @@ Using <span class='primary' style='font-weight:bold;'>SPAN</span> tag with <span
 得改用 <a target='_blank' href='https://en.wikibooks.org/wiki/LaTeX/Colors#Adding_the_color_package'>LaTeX/Colors</a> 語法, 如:
 ```
 github Markdown $\color{red}{DO\ NOT}$ support CSS Style !
--- \textsf, \textrm (Specify the FONT family) NOT supported
+$\textcolor{orange}{\textsf{lorem ipsum}}$
+-- \textsf, \textrm (Specify the FONT family) NOT supported by GitHub
 $\color{#dc3545}{\text{lorem ipsum}}$
 -- VSCode:n/s, GitHub:Yes
 $\color{rgba(255,0,0,0.4)}{\text{lorem ipsum}}$
@@ -120,11 +121,13 @@ $\color{rgba(255,0,0,0.4)}{\text{lorem ipsum}}$
 
 github Markdown $\color{red}{DO\ NOT}$ support CSS Style !
 
+$\textcolor{orange}{\textsf{lorem ipsum}}$
+
 $\color{#dc3545}{\textrm{lorem ipsum}}$
 
 $\color{rgba(255,0,0,0.4)}{\text{lorem ipsum}}$
 
-$\textcolor{orange}{\textsf{lorem ipsum}}$
+$\tiny{\textsf{lorem ipsum}}$
 
 相關的討論:
 - <a target='_blank' href='https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file'>How to add color to GitHub's README.md file</a>
