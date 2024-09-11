@@ -3,6 +3,8 @@
 
 - <a target='_blank' href='https://docs.github.com/en'>GitHub Doc</a>
 - <a target='_blank' href='https://docs.github.com/en/get-started/writing-on-github'>Writing on GitHub</a>
+- <a target='_blank' href='https://github.com/topics/profile-readme'>GitHub Profile ReadMe</a>
+- <a target='_blank' href='https://github.com/abhisheknaiidu/awesome-github-profile-readme'>Awesome GitHub Profile ReadMe</a>
 
 ## Markdown - GitHub vs VSCode
 
@@ -114,6 +116,10 @@ github Markdown do $\color{red}{NOT}$ support CSS Style !
 
 github Markdown $\color{red}{DO\ NOT}$ support CSS Style !
 
+$\color{#dc3545}{\textsf{lorem ipsum}}$
+
+$\color{rgba(255,0,0,0.4)}{\textsf{lorem ipsum}}$
+
 相關的討論:
 - <a target='_blank' href='https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file'>How to add color to GitHub's README.md file</a>
 - <a target='_blank' href='https://stackoverflow.com/questions/51956361/custom-css-file-for-readme-md-in-a-github-repo'>Custom css file for readme.md in a Github repo</a>
@@ -124,5 +130,7 @@ How about <span style='font-weight:900;'>In-Line Style</span> ?
 ```
 
 How about <span style='font-weight:900;'>In-Line Style</span> ?
+
+GitHub 會 *清除/去掉* CSS Style 裡不支援的內容, 結果就變成 Plain Text 格式.
 
 ---
