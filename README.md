@@ -1,7 +1,27 @@
 <!-- title: ReadMe -->
-# About me
+# Markdown study
 
-## Markdown - github vs VSCode
+- <a target='_blank' href='https://docs.github.com/en'>GitHub Doc</a>
+- <a target='_blank' href='https://docs.github.com/en/get-started/writing-on-github'>Writing on GitHub</a>
+
+## Markdown - GitHub vs VSCode
+
+```
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+```
 
 > [!NOTE]
 > Information the user should notice even if skimming.
@@ -70,14 +90,34 @@ CREATE UNIQUE INDEX If NOT EXISTS [Blacklist_I01U] ON [Blacklist](RecGUID);
 CREATE        INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activated, Content);
 ```
 
-## Markdown - CSS Style
+## Markdown - CSS Style and Colors
 
-Using <span class='primary' style='font-weight:bold;'>SPAN</span> tag with <span class='danger'>CSS Style</span>.
+GitHub Markdown 並不支援內嵌 CSS Style !
 
----
-
+不能在 .md 裡放 ```<style></style>```
+```html
 <style>
 	img { border: solid 1px #4949FC; }
 	.danger { color: #dc3545; }
 	.primary { color: #007bff; }
 </style>
+```
+然後用在文件裡來呈現顏色及變化
+```html
+Using <span class='primary' style='font-weight:bold;'>SPAN</span> tag with <span class='danger'>CSS Style</span>.
+```
+得改用 <a target='_blank' href='https://en.wikibooks.org/wiki/LaTeX/Colors#Adding_the_color_package'>LaTeX/Colors</a> 語法, 如:
+```
+github Markdown do $\colorbox{white}{{\color{red}{NOT}}}$ support CSS Style !
+```
+效果如下:
+
+github Markdown do $\colorbox{white}{{\color{red}{NOT}}}$ support CSS Style !
+
+相關的討論:
+- <a target='_blank' href='https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file'>How to add color to GitHub's README.md file</a>
+- <a target='_blank' href='https://stackoverflow.com/questions/51956361/custom-css-file-for-readme-md-in-a-github-repo'>Custom css file for readme.md in a Github repo</a>
+
+How about <span style='font-weight:900;'>In-Line Style</span> ?
+
+---
