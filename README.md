@@ -175,25 +175,16 @@ $\LARGE {your~text~here}$
 $\huge your~text~here$
 $\Huge {your~text~here}$
 ```
-$\tiny {your~text~here}$
-
-$\scriptsize {your~text~here}$
-
-$\footnotesize {your~text~here}$
-
-$\small {your~text~here}$
-
-$\normalsize {your~text~here}$
-
-$\large {your~text~here}$
-
-$\Large {your~text~here}$
-
-$\LARGE {your~text~here}$
-
-$\huge your~text~here$
-
-$\Huge {your~text~here}$
+- $\tiny{your~text~here}$
+- $\scriptsize{your~text~here}$
+- $\footnotesize{your~text~here}$
+- $\small{your~text~here}$
+- $\normalsize{your~text~here}$
+- $\large{your~text~here}$
+- $\Large{your~text~here}$
+- $\LARGE{your~text~here}$
+- $\huge your~text~here$
+- $\Huge {your~text~here}$
 
 ### Font family
 
