@@ -125,9 +125,9 @@ GFM 和 VSCode 提供以下的 Alert Blockquote:
 在 **VSCode** 裡, 可以在文件的前面或底部(建議是底部), 加入 CSS 專用的 **style** tag:
 ```html
 <style>
-	img { border: solid 1px #4949FC; }
-	.danger { color: #dc3545; }
-	.primary { color: #007bff; }
+   img { border: solid 1px #4949FC; }
+   .danger { color: #dc3545; }
+   .primary { color: #007bff; }
 </style>
 ```
 然後用在文件裡來呈現顏色及變化
