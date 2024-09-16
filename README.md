@@ -162,19 +162,8 @@ $$\color{Green}{\text{lorem ipsum 中文 字體}}$$
 
 ### Text Size
 
-LaTex/KaTex 支援的 **Text Size** 有
+LaTex/KaTex 支援的 **Text Size** 有:
 ```LaTex
-$\tiny {your~text~here}$
-$\scriptsize {your~text~here}$
-$\footnotesize {your~text~here}$
-$\small {your~text~here}$
-$\normalsize {your~text~here}$
-$\large {your~text~here}$
-$\Large {your~text~here}$
-$\LARGE {your~text~here}$
-$\huge your~text~here$
-$\Huge {your~text~here}$
-```
 - $\tiny{\text{lorem ipsum 中文字}}$
 - $\scriptsize{\text{lorem ipsum 中文字}}$
 - $\footnotesize{\text{lorem ipsum 中文字}}$
@@ -185,6 +174,24 @@ $\Huge {your~text~here}$
 - $\LARGE{\text{lorem ipsum 中文字}}$
 - $\huge{\text{lorem ipsum 中文字}}$
 - $\Huge{\text{lorem ipsum 中文字}}$
+```
+但 GFM 只支援其中的:
+
+Size|看樣
+--|--
+**tiny** = **scriptsize**|$\tiny{\text{lorem ipsum 中文字}}$
+**small**|$\small{\text{lorem ipsum 中文字}}$
+**normalsize** (預設)|$\normalsize{\text{lorem ipsum 中文字}}$
+**large**|$\large{\text{lorem ipsum 中文字}}$
+**Large** = **LARGE** = **huge** = **Huge**|$\huge{\text{lorem ipsum 中文字}}$
+
+> [!TIP]
+> - Markdown 對文字的突顯效果只有: 粗體字 和 斜體字
+> - 但粗體字在 中文字型 上的突顯效果很差, 所以選擇是:
+>	- 加上配色 (color), 如:
+>		- ```$\color{gold}{\text{lorem 中文 ipsum 字體}}$```
+>		- $\color{gold}{\text{lorem 中文 ipsum 字體}}$
+>	- 套用 Text Size, 但不建議...
 
 ### Font family
 
@@ -262,7 +269,27 @@ CREATE TABLE If NOT EXISTS [Blacklist] (
 CREATE UNIQUE INDEX If NOT EXISTS [Blacklist_I01U] ON [Blacklist](RecGUID);
 CREATE        INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activated, Content);
 ```
+
+> [!WARNING]
+> 各家 Render (如: GFM vs. VSCode) 支援 *Code Block Syntax Highlights* 的函式庫各自不同, 所以突顯效果的應用也會不致!
+
 ### Math formula
+
+語法範例:
+```Tex
+Inline math: $x^2$
+
+Math block:
+
+$$
+\displaystyle
+\left( \sum_{k=1}^n a_k b_k \right)^2
+\leq
+\left( \sum_{k=1}^n a_k^2 \right)
+\left( \sum_{k=1}^n b_k^2 \right)
+$$
+```
+效果如下:
 
 Inline math: $x^2$
 
@@ -308,5 +335,6 @@ $$
 > 	```
 >	<a target='_blank' href='URL'>說明文字</a>
 > 	```
+>	即: 加入 **target='_blank'**
 
 ---
