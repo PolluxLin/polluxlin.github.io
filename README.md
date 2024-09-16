@@ -123,7 +123,7 @@ GFM 和 VSCode 提供以下的 Alert Blockquote:
 一如前面提到的: Markdown 對顏色並沒有標準規範, 所以得透過別的手段來達成.
 
 在 **VSCode** 裡, 可以在文件的前面或底部(建議是底部), 加入 CSS 專用的 **style** tag:
-```html
+```css
 <style>
    img { border: solid 1px #4949FC; }
    .danger { color: #dc3545; }
