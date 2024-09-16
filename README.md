@@ -23,6 +23,10 @@ Markdown 檔案遠比 Word 或 HTML 小得多, 更適合做為線上文件.
 
 如果你要寫 FAQ、SOP或圖文並茂的說明文件, 不妨試試看 Markdown.
 
+> [!TIP]
+> - 除了做文件之外, 也可以從 Markdown preview 中複製內容, 再貼進 Teams, 那會是具備格式化的內容
+> - 如果不是要給 GitHub Repo. 使用的 Readme.md, 而是工作上的文件, 那建議是使用 VSCode 相容的方式來運用 Markdown, 會容易掌握些
+
 ## 特別說明
 
 這份文件不打算介紹 Markdown 的語法, 因為 Internet 上已經有太多了, 自己上網搜尋一下吧.
@@ -56,10 +60,11 @@ Markdown 要轉換成 HTML 或 PDF 非常容易, 除了有一大堆線上工具�
 		- [Color](#color)
 		- [Text Size](#text-size)
 		- [Font family](#font-family)
+		- [Hyper-Link and Image](#hyper-link-and-image)
+		- [Table](#table)
 		- [Task list](#task-list)
 		- [Code Block and Syntax Highlights](#code-block-and-syntax-highlights)
 		- [Math formula](#math-formula)
-		- [Hyper-Link and Image](#hyper-link-and-image)
 
 
 ## 線上文件參考
@@ -205,6 +210,61 @@ GFM-LaTex 不支援 **Sans Serif** 之外的字體, VSCode/KaTex 則有:
 
 目前 LaTex/KaTex 語法並沒有對中文字型的控制能力
 
+### Hyper-Link and Image
+
+- Hyper-link 簡單語法:
+	```
+	[說明文字](URL)
+	如:
+	[Markdown - Wiki](https://en.wikipedia.org/wiki/Markdown)
+	```
+	效果如下:
+
+	[Markdown - Wiki](https://en.wikipedia.org/wiki/Markdown)
+
+- Image 簡單語法:
+	```
+	![說明文字](位置)
+  - 相對位置
+	![image info](./pictures/image.png)
+  - URL
+	![system schema](https://server/group/jobs/blob/master/doc/systemDiagram.jpg)
+	```
+
+> [!IMPORTANT]
+> - 使用 Markdown All in One 套件時, image 的位置預設會轉換成絕對位址
+> - 要強制轉換成相對位置, 請改設定:
+> 	- markdown.extension.print.**absoluteImgPath** 為 **false**
+
+> [!TIP]
+> - Hyper-link 語法會轉譯為 ```<a href='URL'>說明文字</a>```,
+> - 如果希望在點擊時是: 自動另開新頁, 就得改用 HTML 語法:
+> 	```
+>	<a target='_blank' href='URL'>說明文字</a>
+> 	```
+>	即: 加入 **target='_blank'**
+
+### Table
+
+基本語法:
+```
+Heaer1|Header2|Header3|Header4
+--|:--|:--:|--:
+Item A|Left Aligned|Centralized|Right Aligned
+123|Abc|def|567
+```
+效果如下:
+
+Heaer1|Header2|Header3|Header4
+--|:--|:--:|--:
+Item A|Left Aligned|Centralized|Right Aligned
+123|Abc|def|567
+
+語法中, 表頭表身中間的分隔線用來指定對齊的方式:
+- **:--** = 強迫靠左對齊, 等同預設的 **--**
+- **:--:** = 強制置中
+- **--:** = 強迫靠右對齊
+
 ### Task list
 
 工作清單語法:
@@ -271,7 +331,7 @@ CREATE        INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activ
 ```
 
 > [!WARNING]
-> 各家 Render (如: GFM vs. VSCode) 支援 *Code Block Syntax Highlights* 的函式庫各自不同, 所以突顯效果的應用也會不一致!
+> 各家 Render (如: GFM vs. VSCode) 支援 *Code Block Syntax Highlights* 的函式庫各自不同, 所以突顯效果的套用結果也會不一樣!
 
 ### Math formula
 
@@ -302,39 +362,5 @@ $$
 \left( \sum_{k=1}^n a_k^2 \right)
 \left( \sum_{k=1}^n b_k^2 \right)
 $$
-
-### Hyper-Link and Image
-
-- Hyper-link 簡單語法:
-	```
-	[說明文字](URL)
-	如:
-	[Markdown - Wiki](https://en.wikipedia.org/wiki/Markdown)
-	```
-	效果如下:
-
-	[Markdown - Wiki](https://en.wikipedia.org/wiki/Markdown)
-
-- Image 簡單語法:
-	```
-	![說明文字](位置)
-  - 相對位置
-	![image info](./pictures/image.png)
-  - URL
-	![system schema](https://server/group/jobs/blob/master/doc/systemDiagram.jpg)
-	```
-
-> [!IMPORTANT]
-> - 使用 Markdown All in One 套件時, image 的位置預設會轉換成絕對位址
-> - 要強制轉換成相對位置, 請改設定:
-> 	- markdown.extension.print.**absoluteImgPath** 為 **false**
-
-> [!TIP]
-> - Hyper-link 語法會轉譯為 ```<a href='URL'>說明文字</a>```,
-> - 如果希望在點擊時是: 自動另開新頁, 就得改用 HTML 語法:
-> 	```
->	<a target='_blank' href='URL'>說明文字</a>
-> 	```
->	即: 加入 **target='_blank'**
 
 ---
