@@ -271,7 +271,7 @@ CREATE        INDEX If NOT EXISTS [Blacklist_I02X] ON [Blacklist](RecGUID, Activ
 ```
 
 > [!WARNING]
-> 各家 Render (如: GFM vs. VSCode) 支援 *Code Block Syntax Highlights* 的函式庫各自不同, 所以突顯效果的應用也會不致!
+> 各家 Render (如: GFM vs. VSCode) 支援 *Code Block Syntax Highlights* 的函式庫各自不同, 所以突顯效果的應用也會不一致!
 
 ### Math formula
 
