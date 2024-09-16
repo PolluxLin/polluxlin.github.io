@@ -175,16 +175,16 @@ $\LARGE {your~text~here}$
 $\huge your~text~here$
 $\Huge {your~text~here}$
 ```
-- $\tiny{your~text~here}$
-- $\scriptsize{your~text~here}$
-- $\footnotesize{your~text~here}$
-- $\small{your~text~here}$
-- $\normalsize{your~text~here}$
-- $\large{your~text~here}$
-- $\Large{your~text~here}$
-- $\LARGE{your~text~here}$
-- $\huge your~text~here$
-- $\Huge {your~text~here}$
+- $\tiny{\text{lorem ipsum 中文字}}$
+- $\scriptsize{\text{lorem ipsum 中文字}}$
+- $\footnotesize{\text{lorem ipsum 中文字}}$
+- $\small{\text{lorem ipsum 中文字}}$
+- $\normalsize{\text{lorem ipsum 中文字}}$
+- $\large{\text{lorem ipsum 中文字}}$
+- $\Large{\text{lorem ipsum 中文字}}$
+- $\LARGE{\text{lorem ipsum 中文字}}$
+- $\huge{\text{lorem ipsum 中文字}}$
+- $\Huge{\text{lorem ipsum 中文字}}$
 
 ### Font family
 
